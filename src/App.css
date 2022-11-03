@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    height: 100vh;
+    background-image: url(../public/img/peakpx-1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-family: Lato, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__calculadora{
+    width: 450px;
+    height: 610px;
+    padding: 20px;
+    background-color: #3c4352;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px 2px #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.App::before{
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    width: 40%;
+    height: 40%;
+    background-image: conic-gradient(rgba(239, 184, 16, 20%) 0deg, rgba(239, 184, 16, 20%) 90deg, transparent 130deg, transparent 180deg, rgba(69, 48, 255, 20%) 180deg, rgba(69, 48, 255, 10%) 270deg, transparent 310deg, transparent 360deg);
+    transition: transform 2s;
+
+}
+
+.App:hover::before{
+    transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+.contenedor__fila {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Loading{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Loading img{
+    height: 100%;
+    width: 100%;
+
+}
+

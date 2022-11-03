@@ -1,0 +1,19 @@
+.Clear {
+    height: 80px;
+    font-size: 1.6em;
+    display: flex;
+    flex: 1 1;
+    background-color: #d76d6d40;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border:  2px solid white;
+    cursor: pointer;
+    border-radius: 45px;
+}
+
+.Clear:hover{
+    background-color: #152d74;
+}
